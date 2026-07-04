@@ -34,12 +34,8 @@ npm run preview  # preview the build
 6. **Footer** — cinematic closing scene with a giant shimmering wordmark.
 
 ## Two things to configure
-1. **WhatsApp number** — open `src/config/site.js` and set `WHATSAPP_NUMBER`
-   (international format, digits only). Every CTA routes to WhatsApp.
-2. **Higgsfield assets** — generate the renders and drop them into
-   `public/assets/` using the filenames and prompts in
-   `public/assets/ASSETS_AND_HIGGSFIELD_PROMPTS.md`. Until then the site shows
-   elegant animated blueprint placeholders, so it always looks finished.
+1. **WhatsApp number**
+2. **Higgsfield assets** 
 
 ## Editing content
 All services, FAQs, contact details, nav and footer links live in

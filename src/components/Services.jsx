@@ -62,31 +62,42 @@ export default function Services() {
       const total = SERVICES.length - 1;
 
       ScrollTrigger.create({
-        trigger: root.current,
+  trigger: root.current,
 
-        start: "top top",
+  start: "top top",
 
-        end: () => `+=${SERVICES.length * 45}%`,
+  end: () => {
+    if (window.innerWidth < 640) {
+      return "+=3200";
+    }
 
-        pin:
-          window.innerWidth >= 1024,
+    if (window.innerWidth < 1024) {
+      return "+=4200";
+    }
 
-        scrub: 0.4,
+    return `+=${SERVICES.length * 120}%`;
+  },
 
-        onUpdate: (self) => {
-          const p = self.progress * total;
+  pin: true,
 
-          progress.current = p;
+  pinSpacing: true,
 
-          layout(p);
+  anticipatePin: 1,
 
-          const index = Math.round(p);
+  invalidateOnRefresh: true,
 
-          setActive((prev) =>
-            prev === index ? prev : index
-          );
-        },
-      });
+  scrub: 0.5,
+
+  onUpdate: (self) => {
+    const p = self.progress * total;
+
+    progress.current = p;
+
+    layout(p);
+
+    setActive(Math.round(p));
+  },
+});
 
       gsap.to(".svc-bg-layer", {
         backgroundPositionY: "40%",

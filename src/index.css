@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: #f6f3ee;
+  --ink: #1e1e1e;
+  --muted: #6e6e6e;
+  --gold: #c9a66b;
+  --paper: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* Prevent any section (3D carousel, rotated beams, floaters) from widening
+     the page on mobile — this is what made the fixed navbar appear to drift. */
+  overflow-x: hidden;
+  overflow-x: clip;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Lenis */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+body.no-scroll { overflow: hidden; height: 100vh; }
+
+::selection { background: var(--gold); color: #fff; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 9px; }
+::-webkit-scrollbar-track { background: #ece7df; }
+::-webkit-scrollbar-thumb { background: #cdc4b4; border-radius: 20px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+@layer components {
+  .glass {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(22px) saturate(140%);
+    -webkit-backdrop-filter: blur(22px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 30px 80px -30px rgba(30, 30, 30, 0.25);
+  }
+  .glass-dark {
+    background: rgba(20, 19, 17, 0.42);
+    backdrop-filter: blur(26px) saturate(130%);
+    -webkit-backdrop-filter: blur(26px) saturate(130%);
+    border: 1px solid rgba(201, 166, 107, 0.22);
+    box-shadow: 0 30px 90px -30px rgba(0, 0, 0, 0.7);
+  }
+  .gold-line {
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .text-balance { text-wrap: balance; }
+}
+
+@layer utilities {
+  .blueprint-grid {
+    background-image:
+      linear-gradient(rgba(201,166,107,0.10) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,166,107,0.10) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+  .blueprint-grid-dark {
+    background-image:
+      linear-gradient(rgba(201,166,107,0.10) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,166,107,0.10) 1px, transparent 1px),
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 90px 90px, 90px 90px, 18px 18px, 18px 18px;
+  }
+  .perspective-1000 { perspective: 1600px; }
+  .preserve-3d { transform-style: preserve-3d; }
+  .text-shadow-soft { text-shadow: 0 2px 30px rgba(0,0,0,0.18); }
+  .mask-fade-b { -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent); mask-image: linear-gradient(to bottom, #000 70%, transparent); }
+}
+
+.font-display { font-family: 'Playfair Display', serif; }
+
+.reveal-line { display: block; overflow: hidden; }
+.reveal-line > span { display: block; will-change: transform; }
+
+img { -webkit-user-drag: none; user-select: none; }
+
+@keyframes panelIn {
+  0% { opacity: 0; transform: translateY(18px); filter: blur(6px); }
+  100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+.svc-panel { animation: panelIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes faqIn {
+  0% { opacity: 0; transform: translateY(14px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

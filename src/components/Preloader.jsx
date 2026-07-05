@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
+import logoWhite from '../assets/logo/logo-white.png'
 
 /**
  * ARCH ASSIST - cinematic architectural intro preloader.
@@ -54,14 +55,13 @@ export default function Preloader({ onDone }) {
           gsap.set(el, { strokeDasharray: len, strokeDashoffset: len })
         })
       prime('.cons-stroke')
-      prime('.logo-stroke')
 
       // Reduced motion: respectful quick reveal, no long film
       if (reduce) {
         const tl = gsap.timeline({ onComplete: () => onDone?.() })
         tl.to('.shot-1', { opacity: 1, duration: 0.3 })
           .to('.logo-stage', { opacity: 1, duration: 0.4 }, '+=0.1')
-          .to('.logo-stroke', { strokeDashoffset: 0, duration: 0.8, stagger: 0.05 }, '<')
+          .to('.logo-mark', { opacity: 1, duration: 0.8 }, '<')
           .to('.brand-line', { opacity: 1, y: 0, duration: 0.5 }, '-=0.3')
           .to({}, { duration: 0.5 })
           .to(root.current, { opacity: 0, duration: 0.5 })
@@ -100,14 +100,19 @@ export default function Preloader({ onDone }) {
       // ---- SHOT 04 - the brand reveal. ----
       tl.to('.shot-3', { scale: 1.06, filter: 'blur(3px)', duration: 1.0, ease: 'power2.in' }, 4.1)
         .to('.cons-layer', { opacity: 0, scale: 0.82, duration: 0.9, ease: 'power2.in' }, 4.1)
-        .to('.signature-dark', { opacity: 0.5, duration: 1.0 }, 4.2)
+        .to('.signature-dark', { opacity: 0.82, duration: 1.0 }, 4.2)
         .fromTo(
           '.logo-stage',
           { opacity: 0, scale: 0.9 },
           { opacity: 1, scale: 1, duration: 1.0, ease: 'power3.out' },
           4.2
         )
-        .to('.logo-stroke', { strokeDashoffset: 0, duration: 1.3, stagger: 0.12 }, 4.3)
+        .fromTo(
+          '.logo-mark',
+          { opacity: 0, scale: 1.12, filter: 'blur(8px)' },
+          { opacity: 1, scale: 1, filter: 'blur(0px)', duration: 1.4, ease: 'power3.out' },
+          4.35
+        )
 
       // a warm golden architectural light sweeps gently across the logo
       tl.fromTo(
@@ -124,12 +129,39 @@ export default function Preloader({ onDone }) {
       // hold the signature frame briefly
       tl.to({}, { duration: 0.5 })
 
+      // ---- ADDED SHOT - the animated brand film (Higgsfield logo reveal). ----
+      // Plays as an extra transition beat; if the video file is missing it
+      // degrades gracefully (the static mark simply stays on screen).
+
       // TRANSITION 04 - travel THROUGH the logo into the Hero. Seamless.
-      tl.to('.brand-line', { opacity: 0, y: -14, duration: 0.4 }, '>-0.1')
-        .to('.logo-stage', { scale: 9, filter: 'blur(10px)', duration: 0.95, ease: 'power3.in' }, '>-0.15')
-        .to('.shot-3', { scale: 1.3, opacity: 0.35, duration: 0.95, ease: 'power3.in' }, '<')
-        .to(flash.current, { opacity: 1, duration: 0.35, ease: 'power2.in' }, '<0.35')
-        .to(root.current, { opacity: 0, duration: 0.45, ease: 'power2.out' }, '>-0.1')
+      // TRANSITION 04 - travel THROUGH the logo into the Hero.
+tl.to('.brand-line', {
+  opacity: 0,
+  y: -14,
+  duration: 0.4
+}, '>-0.1')
+.to('.logo-stage', {
+  scale: 9,
+  filter: 'blur(10px)',
+  duration: 0.95,
+  ease: 'power3.in'
+}, '>-0.15')
+.to('.shot-3', {
+  scale: 1.3,
+  opacity: 0.35,
+  duration: 0.95,
+  ease: 'power3.in'
+}, '<')
+.to(flash.current, {
+  opacity: 1,
+  duration: 0.35,
+  ease: 'power2.in'
+}, '<0.35')
+.to(root.current, {
+  opacity: 0,
+  duration: 0.45,
+  ease: 'power2.out'
+}, '>-0.1')
     }, root)
 
     return () => ctx.revert()
@@ -222,30 +254,12 @@ export default function Preloader({ onDone }) {
             }}
           />
           <div className="relative h-[30vmin] w-[30vmin] max-h-72 max-w-72 overflow-hidden">
-            <svg viewBox="0 0 120 120" className="h-full w-full">
-              <g
-                stroke="#C9A66B"
-                fill="none"
-                strokeWidth="2.6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path className="logo-stroke" d="M60 18 L96 96 H24 Z" />
-                <path className="logo-stroke" d="M60 18 L60 96" opacity="0.55" />
-                <path className="logo-stroke" d="M42 60 H78" opacity="0.75" />
-                <path className="logo-stroke" d="M33 78 H87" opacity="0.5" />
-              </g>
-              <circle
-                className="logo-stroke"
-                cx="60"
-                cy="60"
-                r="54"
-                stroke="#C9A66B"
-                strokeWidth="0.9"
-                fill="none"
-                opacity="0.3"
-              />
-            </svg>
+            <img
+              src={logoWhite}
+              alt="ARCH ASSIST"
+              className="logo-mark h-full w-full object-contain opacity-0 will-change-transform"
+              style={{ filter: 'drop-shadow(0 10px 34px rgba(201,166,107,0.35))' }}
+            />
             <div
               className="gold-sweep pointer-events-none absolute inset-y-0 -left-1/3 w-1/2 opacity-0"
               style={{
@@ -259,11 +273,26 @@ export default function Preloader({ onDone }) {
         </div>
       </div>
 
+      {/* ADDED SHOT - animated brand film (drop the Higgsfield video at
+          public/assets/video/logo-reveal.mp4). Transparent container: if the
+          file is absent the static mark beneath remains visible. */}
+      <div className="shot-brandfilm pointer-events-none absolute inset-0 opacity-0 will-change-transform">
+        <video
+          className="brandfilm-media h-full w-full object-cover"
+          muted
+          playsInline
+          preload="auto"
+        >
+          {/* Local copy wins if present; otherwise streams the generated film from CDN */}
+          <source src="/assets/video/logo-reveal.mp4" type="video/mp4" />
+        </video>
+      </div>
+
       {/* brand line, appears with the finished mark */}
       <div className="brand-line absolute bottom-[14vh] left-0 right-0 translate-y-4 text-center opacity-0">
-        <h1 className="font-display text-2xl tracking-[0.5em] text-ink">ARCH ASSIST</h1>
+        <h1 className="font-display text-2xl tracking-[0.5em] text-[#f3efe7]">ARCH ASSIST</h1>
         <span className="mx-auto mt-3 block h-px w-16 gold-line" />
-        <p className="mt-3 text-[11px] tracking-[0.4em] text-muted uppercase">
+        <p className="mt-3 text-[11px] tracking-[0.4em] text-white/50 uppercase">
           Architecture Mentorship
         </p>
       </div>

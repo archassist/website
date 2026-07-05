@@ -19,7 +19,7 @@ export function whatsappLink(message = DEFAULT_MESSAGE) {
 export const CONTACT = {
   studio: "ARCH ASSIST",
   tagline: "Architecture Mentorship Platform",
-  email: "hello@archassist.studio",
+  email: "thearchassist@gmail.com",
   phoneDisplay: "+91 93447 01251",
   location: "Available worldwide · Online mentorship studio",
   hours: "Mon – Sat · 10:00 — 20:00 IST",
@@ -298,12 +298,9 @@ export const FAQS = [
 export const POLICIES = [
   { label: "Privacy Policy", href: "#" },
   { label: "Terms & Conditions", href: "#" },
-  { label: "Refund Policy", href: "#" },
 ];
 
 export const SOCIALS = [
-  { label: "Instagram", href: "#" },
-  { label: "Behance", href: "#" },
-  { label: "LinkedIn", href: "#" },
+  { label: "Instagram", href: "#" },  
   { label: "WhatsApp", href: whatsappLink() },
 ];

@@ -96,6 +96,7 @@ export default function Services() {
     layout(p);
 
     setActive(Math.round(p));
+    
   },
 });
 
@@ -159,7 +160,7 @@ export default function Services() {
       items-start
       lg:items-center
       overflow-visible
-      py-12
+      py-3
       lg:py-0
     "
   >
@@ -213,17 +214,19 @@ export default function Services() {
     <div
       className="
         relative
-        z-30
-        mx-auto
-        grid
-        w-full
-        max-w-7xl
-        grid-cols-1
-        items-start
-        gap-4
-        px-5
-        sm:px-8
-        lg:grid-cols-12
+    z-30
+    mx-auto
+    grid
+    w-full
+    max-w-7xl
+    grid-cols-1
+    items-start
+    gap-4
+    px-5
+    pt-8
+    lg:pt-12
+    sm:px-8
+    lg:grid-cols-12
       "
     >
       {/* ================= LEFT ================= */}
@@ -297,6 +300,7 @@ export default function Services() {
                 />
                 <div
                   className="
+                    price-badge
                     absolute
                     top-0
                     right-0
@@ -304,13 +308,14 @@ export default function Services() {
                     border border-white/10
                     bg-white/10
                     backdrop-blur-md
-                    px-4
-                    py-2.5
+                    px-2 py-1
+sm:px-3 sm:py-2
+lg:px-4 lg:py-2.5
                     shadow-[5px_10px_25px_rgba(0,0,0,.35)]">
-                      <p className="text-[10px] tracking-[0.4em] uppercase text-black/55">
-  PRICE
+                      <p className="text-[6px] sm:text-[8px] lg:text-[10px] tracking-[0.25em] uppercase text-black/55">
+  Starting At
 </p>
-  <h4 className="font-display font-semibold text-2xl lg:text-3xl text-[#222222] leading-none">
+  <h4 className="font-display font-semibold text-lg sm:text-xl lg:text-3xl text-[#222222] leading-none">
   {s.price}
 </h4>
 </div>

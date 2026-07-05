@@ -295,6 +295,25 @@ export default function Services() {
                   label={`Higgsfield · ${s.title}`}
                   className="h-full w-full object-cover"
                 />
+                <div
+                  className="
+                    absolute
+                    top-0
+                    right-0
+                    rounded-2xl
+                    border border-white/10
+                    bg-white/10
+                    backdrop-blur-md
+                    px-4
+                    py-2.5
+                    shadow-[5px_10px_25px_rgba(0,0,0,.35)]">
+                      <p className="text-[10px] tracking-[0.4em] uppercase text-black/55">
+  PRICE
+</p>
+  <h4 className="font-display font-semibold text-2xl lg:text-3xl text-[#222222] leading-none">
+  {s.price}
+</h4>
+</div>
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 

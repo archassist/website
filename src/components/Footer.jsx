@@ -4,7 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { NAV_LINKS, POLICIES, SOCIALS, CONTACT } from '../config/site'
 import { scrollTo } from '../hooks/useLenis'
 import CTAButton from './CTAButton'
-import logo from "../assets/logo/logo.jpeg";
+import logo from "../assets/logo/logo-white.png";
 
 gsap.registerPlugin(ScrollTrigger)
 

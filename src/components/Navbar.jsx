@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { NAV_LINKS } from "../config/site";
 import { scrollTo } from "../hooks/useLenis";
 import CTAButton from "./CTAButton";
-import logo from "../assets/logo/logo.jpeg";
+import logo from "../assets/logo/logo-black.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

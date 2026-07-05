@@ -83,7 +83,7 @@ export default function Hero() {
         {/* LEFT */}
         <div className="lg:col-span-4">
           <p className="hero-fade mb-6 text-[11px] tracking-[0.4em] text-gold uppercase">
-            Architecture Mentorship
+            YOUR Architecture Assistant
           </p>
           <h1 className="font-display text-4xl leading-[1.05] text-ink md:text-6xl">
             <span className="reveal-line hero-line"><span>Guidance.</span></span>
@@ -151,7 +151,7 @@ export default function Hero() {
           </p>
           <div className="hero-fade mt-8 grid grid-cols-3 gap-4 max-w-sm">
             {[
-              ['11+', 'Disciplines'],
+              ['19+', 'PROJECTS'],
               ['1:1', 'Mentorship'],
               ['24h', 'Fast Response'],
             ].map(([n, l]) => (

@@ -71,6 +71,7 @@ export const SERVICES = [
       "Climate analysis",
       "Circulation & context studies",
     ],
+    price: "₹299",
   },
 
   {
@@ -87,26 +88,11 @@ export const SERVICES = [
       "Bubble & zoning diagrams",
       "Form exploration",
     ],
+    price: "₹299",
   },
 
   {
     id: "03",
-    title: "BIM Modelling",
-    tag: "Revit • BIM • Coordination",
-    image: bim,
-    video: bimVideo,
-    accent: "#C9A66B",
-    blurb:
-      "Professional BIM modelling for academic and real-world architectural workflows using Autodesk Revit.",
-    points: [
-      "Revit Architecture",
-      "BIM Documentation",
-      "Model Coordination",
-    ],
-  },
-
-  {
-    id: "04",
     title: "2D Drawing",
     tag: "Plans • Sections • Elevations",
     image: drawing2d,
@@ -119,58 +105,11 @@ export const SERVICES = [
       "Sections",
       "Elevations",
     ],
+    price: "₹499",
   },
 
   {
-    id: "05",
-    title: "3D Modelling",
-    tag: "SketchUp • Rhino • Massing",
-    image: modelling3d,
-    video: modellingVideo,
-    accent: "#C9A66B",
-    blurb:
-      "Develop detailed architectural 3D models for visualization, presentations and design refinement.",
-    points: [
-      "SketchUp Models",
-      "Rhino Modelling",
-      "Detailed Geometry",
-    ],
-  },
-
-  {
-    id: "06",
-    title: "Rendering",
-    tag: "Lumion • D5 • Enscape",
-    image: render,
-    video: renderVideo,
-    accent: "#D8B67D",
-    blurb:
-      "Produce cinematic photorealistic renders with realistic lighting, materials and environmental effects.",
-    points: [
-      "Exterior Renders",
-      "Interior Visualizations",
-      "Atmospheric Lighting",
-    ],
-  },
-
-  {
-    id: "07",
-    title: "Presentation Sheets",
-    tag: "Layout • Graphics • Portfolio",
-    image: sheet,
-    video: sheetVideo,
-    accent: "#C9A66B",
-    blurb:
-      "Design premium presentation sheets that communicate architectural ideas with clarity and elegance.",
-    points: [
-      "Jury Sheets",
-      "Competition Boards",
-      "Portfolio Layouts",
-    ],
-  },
-
-  {
-    id: "08",
+    id: "04",
     title: "Working Drawings",
     tag: "Construction • Details",
     image: working,
@@ -183,26 +122,62 @@ export const SERVICES = [
       "Door & Window Schedules",
       "Technical Documentation",
     ],
+    price: "₹499",
   },
 
   {
-    id: "09",
-    title: "Thesis Guidance",
-    tag: "Research • Design • Jury",
-    image: thesis,
-    video: thesisVideo,
+    id: "05",
+    title: "3D Modelling",
+    tag: "SketchUp • Revit • Massing",
+    image: modelling3d,
+    video: modellingVideo,
     accent: "#C9A66B",
     blurb:
-      "Comprehensive mentorship throughout your architectural thesis journey—from research to final jury.",
+      "Develop detailed architectural 3D models for visualization, presentations and design refinement.",
     points: [
-      "Research Assistance",
-      "Design Development",
-      "Jury Preparation",
+      "SketchUp Models",
+      "Rhino Modelling",
+      "Detailed Geometry",
     ],
+    price: "₹999",
   },
 
   {
-    id: "10",
+    id: "06",
+    title: "BIM Modelling",
+    tag: "Revit • BIM • Coordination",
+    image: bim,
+    video: bimVideo,
+    accent: "#C9A66B",
+    blurb:
+      "Professional BIM modelling for academic and real-world architectural workflows using Autodesk Revit.",
+    points: [
+      "Revit Architecture",
+      "BIM Documentation",
+      "Model Coordination",
+    ],
+    price: "₹1299",
+  },
+
+  {
+    id: "07",
+    title: "Rendering",
+    tag: "Lumion • D5 • Enscape",
+    image: render,
+    video: renderVideo,
+    accent: "#D8B67D",
+    blurb:
+      "Produce cinematic photorealistic renders with realistic lighting, materials and environmental effects.",
+    points: [
+      "Exterior Renders",
+      "Interior Visualizations",
+      "Atmospheric Lighting",
+    ],
+    price: "₹199",
+  },
+
+  {
+    id: "08",
     title: "Architectural Walkthrough",
     tag: "Animation • Film • Motion",
     image: walkthrough,
@@ -215,7 +190,45 @@ export const SERVICES = [
       "Lighting & Effects",
       "Video Post Production",
     ],
+    price: "₹999",
   },
+
+  {
+    id: "09",
+    title: "Presentation Sheets",
+    tag: "Layout • Graphics • Portfolio",
+    image: sheet,
+    video: sheetVideo,
+    accent: "#C9A66B",
+    blurb:
+      "Design premium presentation sheets that communicate architectural ideas with clarity and elegance.",
+    points: [
+      "Jury Sheets",
+      "Competition Boards",
+      "Portfolio Layouts",
+    ],
+    price: "₹699",
+  },
+
+
+  {
+    id: "10",
+    title: "Thesis Guidance",
+    tag: "Research • Design • Jury",
+    image: thesis,
+    video: thesisVideo,
+    accent: "#C9A66B",
+    blurb:
+      "Comprehensive mentorship throughout your architectural thesis journey—from research to final jury.",
+    points: [
+      "Research Assistance",
+      "Design Development",
+      "Jury Preparation",
+    ],
+    price: "₹1499",
+  },
+
+
 ];
 
 
@@ -225,10 +238,7 @@ export const FAQS = [
     q: "What exactly does your platform help architecture students with?",
     a: "Everything from the first idea to the final jury: site analysis, concept development, 2D and working drawings, 3D and BIM modelling, renders, sheet presentation, walkthrough videos, portfolio development and full thesis mentorship.",
   },
-  {
-    q: "Who is this service designed for?",
-    a: "Architecture students at every stage — first-year studio projects, design-year submissions, portfolio building for jobs or master's applications, and final-year thesis. Beginners and advanced students are equally welcome.",
-  },
+  
   {
     q: "How do I know my project is in safe hands?",
     a: "You work directly with experienced architects who mentor rather than ghost-produce. We share progress at every stage, explain decisions, and keep you in control of your design voice.",
@@ -236,26 +246,6 @@ export const FAQS = [
   {
     q: "Can you help if my submission deadline is very close?",
     a: "Yes. Tell us the deadline up front and we will scope a realistic plan, prioritise the highest-impact deliverables, and keep you updated so there are no surprises.",
-  },
-  {
-    q: "What information do I need to provide before starting?",
-    a: "Your brief or project statement, any existing drawings or sketches, the deadline, your software, and reference images or studios you admire. The more context, the sharper the guidance.",
-  },
-  {
-    q: "Can you develop a concept if I don't have one?",
-    a: "Absolutely. Concept development is one of our core services — we can take you from a site and a brief to a defensible, original architectural concept.",
-  },
-  {
-    q: "Do you provide site analysis services?",
-    a: "Yes — topography and contour models, climate and environmental overlays, circulation studies and contextual massing, delivered as clear analytical diagrams.",
-  },
-  {
-    q: "Which software do you use?",
-    a: "AutoCAD, Revit, SketchUp, Rhino, Lumion, Enscape, V-Ray, Twinmotion, and the Adobe suite — matched to your course requirements and preferred workflow.",
-  },
-  {
-    q: "Can you create high-quality 3D models and renders?",
-    a: "Yes. We produce clean 3D and BIM models and premium interior and exterior renders with considered lighting, materials and atmosphere.",
   },
   {
     q: "Do you help with thesis projects?",
@@ -289,10 +279,6 @@ export const FAQS = [
     q: "How much does it cost?",
     a: "Pricing depends on the scope, stage and deadline of your project. Message us on WhatsApp with your brief and we'll send a clear, fair quote.",
   },
-  {
-    q: "What if I'm not satisfied with the final output?",
-    a: "We work with you through revisions until you're satisfied. Your success at the jury is the only outcome that matters to us.",
-  },
 ];
 
 export const POLICIES = [
@@ -301,6 +287,6 @@ export const POLICIES = [
 ];
 
 export const SOCIALS = [
-  { label: "Instagram", href: "#" },  
+  { label: "Instagram", href: "https://www.instagram.com/the_archassist?igsh=MXRwa3RuMXdzdjJvYQ==" },  
   { label: "WhatsApp", href: whatsappLink() },
 ];

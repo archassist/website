@@ -83,7 +83,7 @@ export default function Contact() {
           <div className="contact-card glass rounded-3xl overflow-hidden p-5 md:p-9">
 
             <h3 className="font-display text-3xl text-ink">
-              Talk to a mentor
+              Talk to Your Assistant 
             </h3>
 
             <p className="mt-4 max-w-sm text-base leading-relaxed text-muted">
@@ -142,25 +142,7 @@ export default function Contact() {
                 </dd>
               </div>
 
-              <div>
-                <dt className="text-[11px] tracking-[0.3em] uppercase text-gold">
-                  Location
-                </dt>
-
-                <dd className="mt-2 text-sm text-ink">
-                  {CONTACT.location}
-                </dd>
-              </div>
-
-              <div>
-                <dt className="text-[11px] tracking-[0.3em] uppercase text-gold">
-                  Working Hours
-                </dt>
-
-                <dd className="mt-2 text-sm text-ink">
-                  {CONTACT.hours}
-                </dd>
-              </div>
+              
 
               <div>
                 <dt className="text-[11px] tracking-[0.3em] uppercase text-gold">

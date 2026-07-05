@@ -1,0 +1,197 @@
+# =========================================================
+# Arch Assist Robots.txt
+# https://archassist.in
+# =========================================================
+
+User-agent: *
+
+# Allow all public pages
+Allow: /
+
+# Block private/admin paths (future use)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /.well-known/
+
+# Crawl Delay (ignored by Google but respected by some bots)
+Crawl-delay: 2
+
+# Sitemap
+Sitemap: https://archassist.in/sitemap.xml
+
+
+# =========================================================
+# Google
+# =========================================================
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
+
+# =========================================================
+# Microsoft Bing
+# =========================================================
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: MSNBot
+Allow: /
+
+
+# =========================================================
+# Yahoo
+# =========================================================
+
+User-agent: Slurp
+Allow: /
+
+
+# =========================================================
+# DuckDuckGo
+# =========================================================
+
+User-agent: DuckDuckBot
+Allow: /
+
+
+# =========================================================
+# Yandex
+# =========================================================
+
+User-agent: Yandex
+Allow: /
+
+
+# =========================================================
+# Baidu
+# =========================================================
+
+User-agent: Baiduspider
+Allow: /
+
+
+# =========================================================
+# Apple
+# =========================================================
+
+User-agent: Applebot
+Allow: /
+
+
+# =========================================================
+# Facebook
+# =========================================================
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+
+# =========================================================
+# LinkedIn
+# =========================================================
+
+User-agent: LinkedInBot
+Allow: /
+
+
+# =========================================================
+# Pinterest
+# =========================================================
+
+User-agent: Pinterestbot
+Allow: /
+
+
+# =========================================================
+# Twitter / X
+# =========================================================
+
+User-agent: Twitterbot
+Allow: /
+
+
+# =========================================================
+# Discord
+# =========================================================
+
+User-agent: Discordbot
+Allow: /
+
+
+# =========================================================
+# Telegram
+# =========================================================
+
+User-agent: TelegramBot
+Allow: /
+
+
+# =========================================================
+# Slack
+# =========================================================
+
+User-agent: Slackbot
+Allow: /
+
+
+# =========================================================
+# WhatsApp
+# =========================================================
+
+User-agent: WhatsApp
+Allow: /
+
+
+# =========================================================
+# AI Search Crawlers
+# =========================================================
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /

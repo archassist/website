@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- ===================================================== -->
+    <!-- HOME -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/</loc>
+
+        <lastmod>2026-07-05</lastmod>
+
+        <changefreq>weekly</changefreq>
+
+        <priority>1.0</priority>
+
+        <image:image>
+            <image:loc>
+                https://archassist.in/assets/logo/logo.jpeg
+            </image:loc>
+
+            <image:title>
+                Arch Assist Architecture Mentorship
+            </image:title>
+        </image:image>
+
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- HERO -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#home</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.95</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- SERVICES -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#services</loc>
+
+        <changefreq>weekly</changefreq>
+
+        <priority>0.95</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- BIM -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#bim</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.90</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- ARCHITECTURAL DESIGN -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#design</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.90</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- CONCEPT DEVELOPMENT -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#concept</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.90</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- SITE ANALYSIS -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#site-analysis</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.90</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- THESIS -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#thesis</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.85</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- WALKTHROUGH -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#walkthrough</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.85</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- WORKING DRAWINGS -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#working-drawings</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.85</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- PORTFOLIO -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#portfolio</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.85</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- FAQ -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#faq</loc>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.80</priority>
+    </url>
+
+    <!-- ===================================================== -->
+    <!-- CONTACT -->
+    <!-- ===================================================== -->
+
+    <url>
+        <loc>https://archassist.in/#contact</loc>
+
+        <changefreq>weekly</changefreq>
+
+        <priority>0.95</priority>
+    </url>
+
+</urlset>

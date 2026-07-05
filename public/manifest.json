@@ -1,0 +1,97 @@
+{
+  "id": "/",
+  "name": "Arch Assist",
+  "short_name": "ArchAssist",
+  "description": "Architecture Mentorship, BIM Modelling, Architectural Design, Portfolio Guidance, 2D Drawings, 3D Modelling, Rendering, Walkthroughs, Site Analysis and Professional Architectural Services.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait",
+  "background_color": "#FFFFFF",
+  "theme_color": "#C9A66B",
+  "lang": "en-IN",
+  "dir": "ltr",
+
+  "categories": [
+    "architecture",
+    "education",
+    "business",
+    "productivity",
+    "design"
+  ],
+
+  "icons": [
+    {
+      "src": "/assets/logo/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/logo/logo-white.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "/assets/home/final-house.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assets/home/services.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Architecture Mentorship",
+      "short_name": "Mentorship",
+      "description": "Architecture Mentorship & Portfolio Guidance",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "/assets/logo/logo.jpeg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "BIM Modelling",
+      "short_name": "BIM",
+      "description": "Professional BIM Modelling Services",
+      "url": "/#services",
+      "icons": [
+        {
+          "src": "/assets/service/bim.jpeg",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch with Arch Assist",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/assets/logo/logo.jpeg",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+
+  "prefer_related_applications": false
+}

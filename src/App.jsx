@@ -10,6 +10,9 @@ import Services from './components/Services'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import TransitionSection from "./components/TransitionSection";
+import SEO from "./seo/SEO";
+import Meta from "./seo/Meta";
+import Schema from "./seo/Schema";
 
 export default function App() {
   const [phase, setPhase] = useState('loading') // loading -> entrance -> site
@@ -32,23 +35,49 @@ export default function App() {
   }, [entered])
 
   return (
-    <>
-      <AnimatePresence>
-        {phase === 'loading' && <Preloader key="pre" onDone={() => setPhase('entrance')} />}
-        {phase === 'entrance' && <Entrance key="ent" onEnter={() => setPhase('site')} />}
-      </AnimatePresence>
+  <>
+    {/* SEO */}
+    <SEO />
+    <Meta />
+    <Schema />
 
-      {/* Navbar lives OUTSIDE <main> so no ancestor style/transform can ever
-          offset its fixed positioning. */}
-      {entered && <Navbar />}
+    <AnimatePresence>
+      {phase === "loading" && (
+        <Preloader
+          key="pre"
+          onDone={() => setPhase("entrance")}
+        />
+      )}
 
-      <main className={entered ? 'opacity-100' : 'pointer-events-none opacity-0'}>
-        <Hero />
-        <TransitionSection />
-        <Services />
-        <Contact />
-        <Footer />
-      </main>
-    </>
-  )
+      {phase === "entrance" && (
+        <Entrance
+          key="ent"
+          onEnter={() => setPhase("site")}
+        />
+      )}
+    </AnimatePresence>
+
+    {/* Navbar */}
+    {entered && <Navbar />}
+
+    {/* Website */}
+    <main
+      className={
+        entered
+          ? "opacity-100"
+          : "pointer-events-none opacity-0"
+      }
+    >
+      <Hero />
+
+      <TransitionSection />
+
+      <Services />
+
+      <Contact />
+
+      <Footer />
+    </main>
+  </>
+);
 }

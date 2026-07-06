@@ -133,35 +133,6 @@ export default function Preloader({ onDone }) {
       // Plays as an extra transition beat; if the video file is missing it
       // degrades gracefully (the static mark simply stays on screen).
 
-      // TRANSITION 04 - travel THROUGH the logo into the Hero. Seamless.
-      // TRANSITION 04 - travel THROUGH the logo into the Hero.
-tl.to('.brand-line', {
-  opacity: 0,
-  y: -14,
-  duration: 0.4
-}, '>-0.1')
-.to('.logo-stage', {
-  scale: 9,
-  filter: 'blur(10px)',
-  duration: 0.95,
-  ease: 'power3.in'
-}, '>-0.15')
-.to('.shot-3', {
-  scale: 1.3,
-  opacity: 0.35,
-  duration: 0.95,
-  ease: 'power3.in'
-}, '<')
-.to(flash.current, {
-  opacity: 1,
-  duration: 0.35,
-  ease: 'power2.in'
-}, '<0.35')
-.to(root.current, {
-  opacity: 0,
-  duration: 0.45,
-  ease: 'power2.out'
-}, '>-0.1')
     }, root)
 
     return () => ctx.revert()
@@ -297,6 +268,8 @@ tl.to('.brand-line', {
         </p>
       </div>
 
+      {/* white flash - the camera moves through the logo into the story */}
+      <div ref={flash} className="pointer-events-none absolute inset-0 z-[110] bg-white opacity-0" />
     </div>
   )
 }

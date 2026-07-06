@@ -10,7 +10,7 @@ export default function SEO({
 
   const siteName = "Arch Assist";
 
-  const siteURL = "https://archassist.in";
+  const siteURL = "https://archassist.co.in";
 
   const defaultTitle =
     "Arch Assist | Architecture Mentorship | BIM Modelling | Portfolio Guidance | Architectural Design Services";
@@ -520,7 +520,7 @@ export default function SEO({
 
       <meta
         name="reply-to"
-        content="contact@archassist.in"
+        content="contact@archassist.co.in"
       />
 
       {/* ========================================================= */}

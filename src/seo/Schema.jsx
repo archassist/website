@@ -13,23 +13,23 @@ export default function Schema() {
 
       "@type": "Organization",
 
-      "@id": "https://archassist.in/#organization",
+      "@id": "https://archassist.co.in/#organization",
 
       "name": "Arch Assist",
 
-      "url": "https://archassist.in",
+      "url": "https://archassist.co.in",
 
       "logo": {
         "@type": "ImageObject",
-        "url": "https://archassist.in/assets/logo/logo.jpeg"
+        "url": "https://archassist.co.in/assets/logo/logo.jpeg"
       },
 
-      "image": "https://archassist.in/assets/logo/logo.jpeg",
+      "image": "https://archassist.co.in/assets/logo/logo.jpeg",
 
       "description":
         "Arch Assist is an architecture mentorship and architectural services platform helping students, architects and professionals through BIM Modelling, Architectural Design, Portfolio Guidance, Thesis Mentorship, Working Drawings, Site Analysis, Rendering, Walkthroughs and Concept Development.",
 
-      "email": "contact@archassist.in",
+      "email": "contact@archassist.co.in",
 
       "telephone": "+91XXXXXXXXXX",
 
@@ -94,14 +94,14 @@ export default function Schema() {
 
       "@type":"WebSite",
 
-      "@id":"https://archassist.in/#website",
+      "@id":"https://archassist.co.in/#website",
 
-      "url":"https://archassist.in",
+      "url":"https://archassist.co.in",
 
       "name":"Arch Assist",
 
       "publisher":{
-        "@id":"https://archassist.in/#organization"
+        "@id":"https://archassist.co.in/#organization"
       },
 
       "description":
@@ -123,18 +123,18 @@ export default function Schema() {
 
       "@type":"WebPage",
 
-      "@id":"https://archassist.in/#webpage",
+      "@id":"https://archassist.co.in/#webpage",
 
-      "url":"https://archassist.in",
+      "url":"https://archassist.co.in",
 
       "name":"Arch Assist",
 
       "isPartOf":{
-        "@id":"https://archassist.in/#website"
+        "@id":"https://archassist.co.in/#website"
       },
 
       "about":{
-        "@id":"https://archassist.in/#organization"
+        "@id":"https://archassist.co.in/#organization"
       },
 
       "primaryImageOfPage":{
@@ -142,7 +142,7 @@ export default function Schema() {
         "@type":"ImageObject",
 
         "url":
-        "https://archassist.in/assets/logo/logo.jpeg"
+        "https://archassist.co.in/assets/logo/logo.jpeg"
 
       },
 
@@ -166,22 +166,22 @@ export default function Schema() {
 
       "@type":"ProfessionalService",
 
-      "@id":"https://archassist.in/#service",
+      "@id":"https://archassist.co.in/#service",
 
       "name":"Arch Assist",
 
-      "url":"https://archassist.in",
+      "url":"https://archassist.co.in",
 
-      "image":"https://archassist.in/assets/logo/logo.jpeg",
+      "image":"https://archassist.co.in/assets/logo/logo.jpeg",
 
-      "logo":"https://archassist.in/assets/logo/logo.jpeg",
+      "logo":"https://archassist.co.in/assets/logo/logo.jpeg",
 
       "description":
 
       "Arch Assist provides architecture mentorship, BIM Modelling, portfolio guidance, architectural visualization, concept development, working drawings, rendering, walkthroughs and professional architectural consultation.",
 
       "provider":{
-        "@id":"https://archassist.in/#organization"
+        "@id":"https://archassist.co.in/#organization"
       },
 
       "areaServed":{
@@ -411,15 +411,15 @@ export default function Schema() {
 
       "@type":"LocalBusiness",
 
-      "@id":"https://archassist.in/#localbusiness",
+      "@id":"https://archassist.co.in/#localbusiness",
 
       "name":"Arch Assist",
 
-      "url":"https://archassist.in",
+      "url":"https://archassist.co.in",
 
-      "image":"https://archassist.in/assets/home/final-house.jpg",
+      "image":"https://archassist.co.in/assets/home/final-house.jpg",
 
-      "logo":"https://archassist.in/assets/logo/logo.jpeg",
+      "logo":"https://archassist.co.in/assets/logo/logo.jpeg",
 
       "priceRange":"₹₹",
 
@@ -429,7 +429,7 @@ export default function Schema() {
 
       "telephone":"+91XXXXXXXXXX",
 
-      "email":"contact@archassist.in",
+      "email":"contact@archassist.co.in",
 
       "address":{
 
@@ -495,13 +495,13 @@ export default function Schema() {
 
       "@type":"ContactPoint",
 
-      "@id":"https://archassist.in/#contact",
+      "@id":"https://archassist.co.in/#contact",
 
       "contactType":"Customer Support",
 
       "telephone":"+91XXXXXXXXXX",
 
-      "email":"contact@archassist.in",
+      "email":"contact@archassist.co.in",
 
       "availableLanguage":[
 
@@ -527,11 +527,11 @@ export default function Schema() {
 
       "@type":"ImageObject",
 
-      "@id":"https://archassist.in/#heroimage",
+      "@id":"https://archassist.co.in/#heroimage",
 
       "contentUrl":
 
-      "https://archassist.in/assets/logo/logo.jpeg",
+      "https://archassist.co.in/assets/logo/logo.jpeg",
 
       "caption":
 
@@ -551,11 +551,11 @@ export default function Schema() {
 
       "@type":"ImageObject",
 
-      "@id":"https://archassist.in/#logo",
+      "@id":"https://archassist.co.in/#logo",
 
       "contentUrl":
 
-      "https://archassist.in/assets/logo/logo.jpeg",
+      "https://archassist.co.in/assets/logo/logo.jpeg",
 
       "caption":"Arch Assist Logo"
 
@@ -573,7 +573,7 @@ export default function Schema() {
 
       "@type":"ProfilePage",
 
-      "@id":"https://archassist.in/#social",
+      "@id":"https://archassist.co.in/#social",
 
       "mainEntity":{
 

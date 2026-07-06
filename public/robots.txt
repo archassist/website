@@ -1,6 +1,6 @@
 # =========================================================
 # Arch Assist Robots.txt
-# https://archassist.in
+# https://archassist.co.in
 # =========================================================
 
 User-agent: *
@@ -18,7 +18,7 @@ Disallow: /.well-known/
 Crawl-delay: 2
 
 # Sitemap
-Sitemap: https://archassist.in/sitemap.xml
+Sitemap: https://archassist.co.in/sitemap.xml
 
 
 # =========================================================

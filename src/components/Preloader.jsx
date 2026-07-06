@@ -293,12 +293,10 @@ tl.to('.brand-line', {
         <h1 className="font-display text-2xl tracking-[0.5em] text-[#f3efe7]">ARCH ASSIST</h1>
         <span className="mx-auto mt-3 block h-px w-16 gold-line" />
         <p className="mt-3 text-[11px] tracking-[0.4em] text-white/50 uppercase">
-          Architecture Mentorship
+          Architecture Assistant
         </p>
       </div>
 
-      {/* white flash - the camera moves through the logo into the story */}
-      <div ref={flash} className="pointer-events-none absolute inset-0 z-[110] bg-white opacity-0" />
     </div>
   )
 }

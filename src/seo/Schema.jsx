@@ -24,7 +24,7 @@ export default function Schema() {
         "url": "https://archassist.in/assets/logo/logo.jpeg"
       },
 
-      "image": "https://archassist.in/assets/home/final-house.jpg",
+      "image": "https://archassist.in/assets/logo/logo.jpeg",
 
       "description":
         "Arch Assist is an architecture mentorship and architectural services platform helping students, architects and professionals through BIM Modelling, Architectural Design, Portfolio Guidance, Thesis Mentorship, Working Drawings, Site Analysis, Rendering, Walkthroughs and Concept Development.",
@@ -142,7 +142,7 @@ export default function Schema() {
         "@type":"ImageObject",
 
         "url":
-        "https://archassist.in/assets/home/final-house.jpg"
+        "https://archassist.in/assets/logo/logo.jpeg"
 
       },
 
@@ -172,7 +172,7 @@ export default function Schema() {
 
       "url":"https://archassist.in",
 
-      "image":"https://archassist.in/assets/home/final-house.jpg",
+      "image":"https://archassist.in/assets/logo/logo.jpeg",
 
       "logo":"https://archassist.in/assets/logo/logo.jpeg",
 
@@ -531,7 +531,7 @@ export default function Schema() {
 
       "contentUrl":
 
-      "https://archassist.in/assets/home/final-house.jpg",
+      "https://archassist.in/assets/logo/logo.jpeg",
 
       "caption":
 

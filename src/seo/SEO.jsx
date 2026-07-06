@@ -123,7 +123,7 @@ export default function SEO({
 
   const defaultImage =
     image ||
-    `${siteURL}/assets/home/final-house.jpg`;
+    `${siteURL}/assets/logo/logo.jpeg`;
 
   const canonicalURL =
     url || siteURL;
@@ -490,7 +490,7 @@ export default function SEO({
       <link
         rel="preload"
         as="image"
-        href="/assets/home/final-house.jpg"
+        href="/assets/logo/logo.jpeg"
       />
 
       <link

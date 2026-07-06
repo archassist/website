@@ -197,12 +197,12 @@ export default function Meta() {
 
       <meta
         property="og:image"
-        content="/assets/home/final-house.jpg"
+        content="/assets/logo/logo.jpeg"
       />
 
       <meta
         property="og:image:secure_url"
-        content="/assets/home/final-house.jpg"
+        content="/assets/logo/logo.jpeg"
       />
 
       <meta
@@ -231,7 +231,7 @@ export default function Meta() {
 
       <meta
         name="twitter:image"
-        content="/assets/home/final-house.jpg"
+        content="/assets/logo/logo.jpeg"
       />
 
       {/* ========================================================= */}
